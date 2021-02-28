@@ -25,10 +25,8 @@ public class GitDemo {
     public double findFactorial(double num) {
         double factorialNumber = 0;
         
-        while( num != 0 ) {
-            double temp = num % 10;
-            factorialNumber = factorialNumber * 10 + temp;
-            num /= 10;
+        for(int i = 1; i <= num; ++i){
+            newNumber = newNumber * i;
         }
         
         return factorialNumber;
@@ -42,8 +40,10 @@ public class GitDemo {
     public double reverseNumber(double num){
         double newNumber = 1;
         
-        for(int i = 1; i <= num; ++i){
-            newNumber = newNumber * i;
+        while( num != 0 ) {
+            double temp = num % 10;
+            factorialNumber = factorialNumber * 10 + temp;
+            num /= 10;
         }
         
         return newNumber;
